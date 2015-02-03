@@ -1,8 +1,8 @@
 #!/usr/bin/env perl 
 # split.pl
-# Luca Cappelletti (2013)
+# Luca Cappelletti (2013-2015)
 # luca.cappelletti@gmail.com
-# WTF License
+# WTFPL License
 #
 # per windows dovrebbe essere
 # C:\Perl\bin\perl.exe -w
