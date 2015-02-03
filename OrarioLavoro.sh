@@ -9,6 +9,8 @@
 
 [ -z $1 ] && echo "uso: "$0" ORA_IN:MINUTI_IN ORA_OUT:MINUTI_OUT" && exit 1
 
+[ ! -x $( which bc) ] || exit 1
+
 ingr=$1
 usci=$2
 
