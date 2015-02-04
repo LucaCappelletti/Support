@@ -141,7 +141,7 @@ then
         # AI_0_PRESSIONE_1 AI_1_TEMPERATURA_4 AI_2_TEMPERATURA_2 AI_3_TEMPERATURA_1
         ## AI_0_PRESSIONE_1 AI_1_TEMPERATURA_4 AI_2_TEMPERATURA_3 AI_3_TEMPERATURA_1#
         
-        lst=$(ls *.txt -tr | sort | tail -n 1)
+        lst=$(ls *.txt -tr | tail -n 2 | sort | tail -n 1)
         id=$(echo $lst | cut -d"_" -f 1)
         head=$(awk 'NR==22 {print $3,$4,$5,$6}' $lst)
         first=$(awk 'NR==23 {print $2,$3,$4,$5}' $lst)
@@ -214,7 +214,7 @@ EOF
         # AI_0_PRESSIONE_1 AI_1_TEMPERATURA_4 AI_2_TEMPERATURA_2 AI_3_TEMPERATURA_1
         #
         
-        lst=$(ls *.txt -tr | sort | tail -n 1)
+        lst=$(ls *.txt -tr | tail -n 2 | sort | tail -n 1)
         id=$(echo $lst | cut -d"_" -f 1)
         head=$(awk 'NR==22 {print $3,$4,$5,$6}' $lst)
         first=$(awk 'NR==23 {print $2,$3,$4,$5}' $lst)
