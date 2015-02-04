@@ -266,7 +266,8 @@ EOF
 else
 
     cd $ReqDir
-    ls --color
+    # directory con tanti files è lentissimo su windows
+    #ls --color
 
 fi
 
