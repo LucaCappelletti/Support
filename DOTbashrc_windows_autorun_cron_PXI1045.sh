@@ -127,7 +127,7 @@ then
 		wait
 		
 		sleep 10
-		
+
 		rm 000_ULTIMO_AGGIORNAMENTO*
 		wait
 		touch $(echo "000_ULTIMO_AGGIORNAMENTO_IL-"$(date +%d_%m_%Y)"-ALLE-"$(date +%H_%M"_GMT"))
